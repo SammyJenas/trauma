@@ -42,7 +42,7 @@ function draw() {
         textCell(i, j, l, c1, c2);
       }
     }
-    image(pg, 0, 0, windowWidth, windowHeight);
+   image(pg, 0, 0, windowWidth, windowHeight); 
   }  
 }
 
