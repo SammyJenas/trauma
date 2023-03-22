@@ -31,9 +31,6 @@ function windowResized(){
 }
 
 function draw() {
-  if (frameCount == 1){
-    resizeCanvas(windowWidth, windowHeight);
-  }
   pg.background(0);
   if (ready){
     for (i = 0; i < pg.width; i += 24) {
