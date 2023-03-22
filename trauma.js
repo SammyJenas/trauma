@@ -32,9 +32,6 @@ function windowResized(){
 
 function draw() {
   pg.background(0);
-  if (frameCount == 1){
-    windowResized();
-  }
   if (ready){
     for (i = 0; i < pg.width; i += 24) {
       for (j = 36; j < pg.height + 48; j += 48) {
@@ -45,7 +42,7 @@ function draw() {
         textCell(i, j, l, c1, c2);
       }
     }
-   image(pg, 0, 0, windowWidth, windowHeight); 
+   image(pg, 0, 0, width, height); 
   }  
 }
 
