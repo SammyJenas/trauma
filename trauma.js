@@ -7,6 +7,7 @@ let pg;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  background(0);
   pg = createGraphics(1920, 1440)
   pixelDensity(1);
   noSmooth();
