@@ -32,6 +32,9 @@ function windowResized(){
 
 function draw() {
   pg.background(0);
+  if (frameCount == 1){
+    windowResized();
+  }
   if (ready){
     for (i = 0; i < pg.width; i += 24) {
       for (j = 36; j < pg.height + 48; j += 48) {
