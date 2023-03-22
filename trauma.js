@@ -32,7 +32,7 @@ function windowResized(){
 
 function draw() {
   pg.background(0);
-  if (ready){
+  if (ready && frameCount > 10){
     for (i = 0; i < pg.width; i += 24) {
       for (j = 36; j < pg.height + 48; j += 48) {
         let r = int(random(32, chars.length +1));
